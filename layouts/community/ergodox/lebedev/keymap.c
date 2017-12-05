@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS, KC_F14,  KC_F15,  KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS,
     KC_TRNS, KC_1,    KC_2,    KC_3,    KC_4,     KC_5,    KC_TRNS,
     KC_TRNS, KC_PIPE, KC_AMPR, KC_ASTR, KC_SLASH, KC_PERC,
-    KC_TRNS, M(1),    M(2),    M(3),    KC_TRNS,  KC_TRNS, KC_TRNS,
+    KC_TRNS, M(1),    M(2),    KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
 
                                                            KC_TRNS, KC_TRNS,
@@ -104,12 +104,7 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
     break;
   case 2:
     if (record->event.pressed) {
-      SEND_STRING("yury.lebedev@td-berlin.com");
-    }
-    break;
-  case 3:
-    if (record->event.pressed) {
-      SEND_STRING("y.lebedev@reply.de");
+      SEND_STRING("yury.lebedev@daimler.com");
     }
     break;
   }
