@@ -41,14 +41,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  | Shift|
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Hyper| Numb | Alt  | Cmd  | Symb | Space| Enter| Symb | Cmd  | Alt  |  Numb| Tmux |
+ * | Hyper| Numb | Alt  | Cmd  | Symb | Space| Enter| Symb | Cmd  | CAPS | Numb | Tmux |
  * `-----------------------------------------------------------------------------------'
  */
 [_QWERTY] = {
-  {KC_TAB,        KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,      KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC},
-  {CTL_T(KC_ESC), KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,      KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT},
-  {KC_LSPO,       KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,      KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSPC},
-  {ALL_T(KC_NO),  NUMB,    KC_LALT, KC_LGUI, SYMB,    KC_SPC,  KC_ENTER,  SYMB,    KC_LGUI, KC_LALT, NUMB,    LCTL(KC_B)}
+  {KC_TAB,        KC_Q,      KC_W,    KC_E,    KC_R, KC_T,    KC_Y,      KC_U, KC_I,    KC_O,    KC_P,      KC_BSPC},
+  {CTL_T(KC_ESC), KC_A,      KC_S,    KC_D,    KC_F, KC_G,    KC_H,      KC_J, KC_K,    KC_L,    KC_SCLN,   KC_QUOT},
+  {KC_LSPO,       KC_Z,      KC_X,    KC_C,    KC_V, KC_B,    KC_N,      KC_M, KC_COMM, KC_DOT,  KC_SLSH,   KC_RSPC},
+  {ALL_T(KC_NO),  TT(_NUMB), KC_LALT, KC_LGUI, SYMB, KC_SPC,  KC_ENTER,  SYMB, KC_LGUI, KC_CAPS, TT(_NUMB), LCTL(KC_B)}
 },
 
 /* Symbols
