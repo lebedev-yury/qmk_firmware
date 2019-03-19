@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * |      |   `  |   (  |   {  |   }  |   )  | Left | Down |  Up  | Right|   _  |  +   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |      |   ~  |   |  |   [  |   ]  |      |      | Home |PgDown| PgUp |  End |      |
+ * |      |   ~  |   |  |   [  |   ]  | Play | Mute | Vol- | Vol+ | Prev | Next |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |             |      |      |      |      |      |
  * `-----------------------------------------------------------------------------------'
@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_SYMB] = {
   {KC_DEL,  KC_EXLM,  KC_AT,   KC_HASH,     KC_DLR,      KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_MINUS, KC_EQUAL, KC_BSLASH},
   {_______, KC_GRAVE, KC_LPRN, KC_LCBR,     KC_RCBR,     KC_RPRN, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_UNDS,  KC_PLUS},
-  {_______, KC_TILD,  KC_PIPE, KC_LBRACKET, KC_RBRACKET, _______, _______, KC_HOME, KC_PGDN, KC_PGUP,  KC_END,   _______},
+  {_______, KC_TILD,  KC_PIPE, KC_LBRACKET, KC_RBRACKET, KC_MPLY, KC_MUTE, KC_VOLD, KC_VOLU, KC_MPRV,  KC_MNXT,  _______},
   {_______, _______,  _______, _______,     _______,     _______, _______, _______, _______, _______,  _______,  _______}
 },
 

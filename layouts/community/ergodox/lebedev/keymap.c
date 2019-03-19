@@ -104,7 +104,7 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
     break;
   case 2:
     if (record->event.pressed) {
-      SEND_STRING("yury.lebedev@daimler.com");
+      SEND_STRING("yury.lebedev@share-now.com");
     }
     break;
   }
