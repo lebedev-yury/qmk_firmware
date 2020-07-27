@@ -1,7 +1,13 @@
 # My Ergodox EZ layout
 
+First, you have to install the QMK tool:
+
+```bash
+brew install qmk/qmk/qmk
+```
+
 To build the hex file, simply run (within the `qmk_firmware` directory):
 
-```
-docker run -e keymap=lebedev -e keyboard=ergodox_ez --rm -v $('pwd'):/qmk:rw edasque/qmk_firmware
+```bash
+qmk compile -kb ergodox_ez -km lebedev
 ```

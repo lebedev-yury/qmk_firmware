@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     KC_CAPS,     KC_6, KC_7,     KC_8,     KC_9,    KC_0,      KC_MINUS,
     LCTL(KC_B),  KC_Y, KC_U,     KC_I,     KC_O,    KC_P,      KC_BSLASH,
-                 KC_H, KC_J,     KC_K,     KC_L,    KC_SCOLON, CTL_T(KC_QUOTE),
+                 KC_H, KC_J,     KC_K,     KC_L,    KC_SCOLON, KC_QUOTE,
     KC_RBRACKET, KC_N, KC_M,     KC_COMMA, KC_DOT,  KC_SLASH,  KC_RSPC,
                        MO(SYMB), KC_LGUI,  KC_LALT, MO(NUMB),  ALL_T(KC_NO),
 
@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS, KC_F14,  KC_F15,  KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS,
     KC_TRNS, KC_1,    KC_2,    KC_3,    KC_4,     KC_5,    KC_TRNS,
     KC_TRNS, KC_PIPE, KC_AMPR, KC_ASTR, KC_SLASH, KC_PERC,
-    KC_TRNS, M(1),    M(2),    KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS,
+    KC_TRNS, M(1),    M(2),    M(3),    KC_TRNS,  KC_TRNS, KC_TRNS,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
 
                                                            KC_TRNS, KC_TRNS,
@@ -104,7 +104,12 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
     break;
   case 2:
     if (record->event.pressed) {
-      SEND_STRING("yury.lebedev@share-now.com");
+      SEND_STRING("yury.lebedev@adjust.com");
+    }
+    break;
+  case 3:
+    if (record->event.pressed) {
+      SEND_STRING("yury.lebedev@adeven.com");
     }
     break;
   }
